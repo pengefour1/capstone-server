@@ -1,6 +1,6 @@
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://princephotographybackup:RfxjcuowLlP0rngg@cluster0.ky5t1km.mongodb.net/').then(()=>{
+mongoose.connect(process.env.MONGO_URL).then(()=>{
     console.log('mongodb connected');
 })
 .catch(()=>{
