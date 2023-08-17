@@ -9,7 +9,7 @@ app.use(cors())
 
 
 
-app.get("/check",cors(),(req,res)=>{
+app.get("/",(req,res)=>{
     res.json({"name":"connected"})
 
 })
